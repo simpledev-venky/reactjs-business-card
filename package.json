@@ -5,10 +5,12 @@
   "description": "",
   "license": "MIT",
   "scripts": {
-    "start": "vite",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
-    "build": "vite build"
+    
+      "start": "vite",
+      "build": "vite build",
+      "predeploy": "rm -rf dist && vite build",
+      "deploy": "gh-pages -d dist"
+    
   },
   "dependencies": {
     "react": "^17.0.2",
